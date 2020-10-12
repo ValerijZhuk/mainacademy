@@ -5,6 +5,9 @@ public class Cat {
 		int age = 0;
 		String nickname;
 		double money = 1000;
+		char initials = 'Â';
+		boolean isHomeAnimal = true;
+		
 		public void grow(){
 			age = age + 1;
 			}
@@ -25,9 +28,22 @@ public class Cat {
 			}
 		public void setMoney (double money) {
 			this.money = money;
-		}
+			}
 		public double getMoney () {
 			return money;
+			}
+		public void setInitials (char initials) {
+			this.initials = initials;
+			}
+		public char getInitials () {
+			return initials;
 		}
+		public void setIsHomeAnimal (boolean isHomeAnimal) {
+			this.isHomeAnimal = isHomeAnimal;
+			}
+		public boolean isHomeAnimal () {
+			return isHomeAnimal;
+		}
+		    
 
 }
