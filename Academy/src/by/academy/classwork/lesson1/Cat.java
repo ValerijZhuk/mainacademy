@@ -44,6 +44,4 @@ public class Cat {
 		public boolean isHomeAnimal () {
 			return isHomeAnimal;
 		}
-		    
-
 }
