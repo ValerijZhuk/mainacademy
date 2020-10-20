@@ -5,20 +5,20 @@ public class Cat {
 		int age = 0;
 		String nickname;
 		double money = 1000;
-		char initials = 'пїЅ';
+		char initials = 'V';
 		boolean isHomeAnimal = true;
 		
 		public void grow(){
 			age = age + 1;
 			}
 		public void sleep(){
-			System.out.println("РљРѕС‚ СЃРїРёС‚");
+			System.out.println("Кот спит");
 			}
 		public void eat(){
-			System.out.println("РљРѕС‚ РµСЃС‚");
+			System.out.println("Кот ест");
 			}
 		public void walk(){
-			System.out.println("РљРѕС‚ РіСѓР»СЏРµС‚");
+			System.out.println("Кот гуляет");
 			}
 		public Cat(){
 			// nothing
