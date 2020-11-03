@@ -11,11 +11,9 @@ public class Task4 {
 			}
 			System.out.println("Степень двойки: " + i);
 			System.out.println("Итоговое число: " + b);
-			b = Math.pow(a, i+1);
-			System.out.println("Степень двойки: " + (i+1));
+			b = Math.pow(a, i + 1);
+			System.out.println("Степень двойки: " + (i + 1));
 			System.out.println("Итоговое число: " + b);
 		}
-		
 	}
-
 }
