@@ -4,23 +4,23 @@ public class Task5 {
 
 	public static void main(String[] args) {
 		Scanner a = new Scanner (System.in);
-		System.out.println ("Введите 2 любых целых числа: ");
+		System.out.println ("Р’РІРµРґРёС‚Рµ 2 С‡РёСЃР»Р°: ");
 		int b = a.nextInt();
 		int c = a.nextInt();
 		a.close();
 		
 		if (b > c) {
-			System.out.println("Большее число " + b);
-			System.out.println("Меньшее число " + c);	
+			System.out.println("Р‘РѕР»СЊС€РµРµ С‡РёСЃР»Рѕ " + b);
+			System.out.println("РњРµРЅСЊС€РµРµ С‡РёСЃР»Рѕ " + c);	
 		}	
 		else if (b < c) {
-			System.out.println("Большее число " + c);
-			System.out.println("Меньшее число " + b);	
+			System.out.println("Р‘РѕР»СЊС€РµРµ С‡РёСЃР»Рѕ " + c);
+			System.out.println("РњРµРЅСЊС€РµРµ С‡РёСЃР»Рѕ " + b);	
 		}
 		else if (b == c) {
-			System.out.println("Число " + c + " равно числу " + b);
+			System.out.println("Р§РёСЃР»Рѕ " + c + " СЂР°РІРЅРѕ С‡РёСЃР»Сѓ " + b);
 				
 		}
-		System.out.print("Середнее арифметическое чисел " + (double)(b + c)/2);	
+		System.out.print("РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ С‡РёСЃРµР» " + (double)(b + c)/2);	
 	}
 }

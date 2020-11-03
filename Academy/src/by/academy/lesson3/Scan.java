@@ -6,7 +6,7 @@ public class Scan {
 
 	public static void main(String[] args) {
 		Scanner a = new Scanner(System.in);
-		System.out.println("Введите 2 любых целых числа: ");
+		System.out.println("Р’РІРµРґРёС‚Рµ 2 С‡РёСЃР»Р°: ");
 		int b = a.nextInt();
 		int c = a.nextInt();
 		System.out.print(b + c);

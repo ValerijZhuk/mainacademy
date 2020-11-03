@@ -7,8 +7,6 @@ public class Task2 {
 		byte b = 100;
 		short c = 234;
 		System.out.println(a / b * c);
-		// Ответ: (4_967_820)
-
 	}
 
 }

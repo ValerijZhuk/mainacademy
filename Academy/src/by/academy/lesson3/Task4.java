@@ -11,6 +11,6 @@ public class Task4 {
 		seconds = (((seconds % (7 * 24 * 60 * 60)) % (24 * 60 * 60)) % (60 * 60)) % 60;
 
 		System.out.println(
-				weeks + " недель " + days + " дней " + hours + " часов " + minutes + " минут " + seconds + " секунд");
+				weeks + " РЅРµРґРµР»СЊ " + days + " РґРЅРµР№ " + hours + " С‡Р°СЃРѕРІ " + minutes + " РјРёРЅСѓС‚ " + seconds + " СЃРµРєСѓРЅРґ");
 	}
 }

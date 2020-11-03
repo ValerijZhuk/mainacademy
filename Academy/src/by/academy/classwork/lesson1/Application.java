@@ -10,7 +10,7 @@ public class Application {
 	Cat.grow();
 	Cat.grow();
 	Cat.grow();
-	System.out.println("Безымянному коту " + Cat.age + " года");
+	System.out.println("Р‘РµР·С‹РјСЏРЅРЅРѕРјСѓ РєРѕС‚Сѓ " + Cat.age + "РіРѕРґР°");
 	System.out.println(Cat.getMoney());
 	System.out.println(Cat.getInitials());
 	System.out.println(Cat.isHomeAnimal());
