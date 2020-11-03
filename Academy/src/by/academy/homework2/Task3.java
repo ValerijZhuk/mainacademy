@@ -10,7 +10,7 @@ public class Task3 {
 		int a = scan.nextInt();
 		System.out.println("Таблица умножения для вашего числа от 1 до 10:");
 		for (int i = 1; i <= 10; i++) {
-						System.out.println(i * a);
+						System.out.println(a * i);
 		}
 	}
 
