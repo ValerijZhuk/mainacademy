@@ -11,7 +11,7 @@ public class Task4 {
 		String b = word.nextLine();
 
 		if (a.length() % 2 != 0 && a.length() % 2 != 0) {
-			System.out.println("Вы ввели слова с нечетным количеством букв.");
+			System.out.println("Вы ввели слова с нечетным количеством букв. Повторите попытку.");
 		} else {
 			String parts = (a.substring(0, a.length() / 2) + b.substring(b.length() / 2));
 			System.out.println(parts);
