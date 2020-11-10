@@ -17,12 +17,8 @@ public class Task3 {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		System.out.println("Введите три слова");
-		//int num = s.nextInt();
-		String[] a = { s.nextLine(), s.nextLine(), s.nextLine()}; //new String[num+1];
-		//for (int i = 0; i < num; i++) {
-		//	a[i] = s.nextLine();
-		// }
+		System.out.println("Введите три слова:");
+		String[] a = { s.nextLine(), s.nextLine(), s.nextLine() };
 		String goal = a[0];
 		System.out.println("Массив: ");
 		for (int i = 0; i < a.length; i++) {
