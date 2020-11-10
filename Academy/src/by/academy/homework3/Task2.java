@@ -6,6 +6,7 @@ public class Task2 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		System.out.println("Введите две строки для сравнения");
 		String s = scan.nextLine();
 		String t = scan.nextLine();
 
@@ -13,7 +14,7 @@ public class Task2 {
 			System.out.println("false");
 
 		} else {
-			int[] letters = new int[256];
+			int[] letters = new int[2048];
 
 			char[] s_array = s.toCharArray();
 			for (char c : s_array) {
