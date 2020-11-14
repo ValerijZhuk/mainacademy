@@ -67,8 +67,9 @@ public class Deal {
 	private void printBill() {
 		double sum = 0;
 		System.out.println("Сделка совершена ");
+		System.out.println(date);
 		for (Product product : products) {
-			double totalProductPrice = product.getPrice() * product.getQualitity();
+			double totalProductPrice = product.getPrice() * product.getQualitity() * product.calcDiscount();
 			sum += totalProductPrice;
 			System.out.println("Имя: " + product.getName() + " " + "цена " + product.getPrice() + " количество "
 					+ product.getQualitity() + " = " + totalProductPrice);

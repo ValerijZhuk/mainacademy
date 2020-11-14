@@ -27,9 +27,9 @@ public class Task2 {
 			break;
 		case "char":
 			System.out.println("Введите символ: ");
-			char var3 = scan.next().charAt(0);
-			int a = (char) var3;
-			System.out.println("Код символа : " + a);
+			int var3 = scan.next().charAt(0);
+			//int a = (char) var3;
+			System.out.println("Код символа : " + var3);
 			break;
 		case "String":
 			System.out.println("Введите строку: ");

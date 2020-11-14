@@ -10,7 +10,7 @@ public class Product {
 		super();
 	}
 
-	public Product(double price, String name, String type, int qualitity) {
+	public Product(double price, String type, String name, int qualitity) {
 		super();
 		this.price = price;
 		this.name = name;
@@ -50,4 +50,11 @@ public class Product {
 		this.qualitity = qualitity;
 	}
 
+	protected double calcDiscount() {
+		if (qualitity * price > 1000) {
+			return 0.8;
+		}
+		return 1;
+
+	}
 }
