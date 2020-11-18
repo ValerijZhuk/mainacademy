@@ -4,18 +4,18 @@ public class Product {
 	double price;
 	String type;
 	String name;
-	int qualitity;
+	int quantity;
 
 	public Product() {
 		super();
 	}
 
-	public Product(double price, String type, String name, int qualitity) {
+	public Product(double price, String type, String name, int quantity) {
 		super();
 		this.price = price;
 		this.name = name;
 		this.type = type;
-		this.qualitity = qualitity;
+		this.quantity = quantity;
 	}
 
 	public double getPrice() {
@@ -42,16 +42,16 @@ public class Product {
 		this.type = type;
 	}
 
-	public int getQualitity() {
-		return qualitity;
+	public int getQuantity() {
+		return quantity;
 	}
 
-	public void setQualitity(int qualitity) {
-		this.qualitity = qualitity;
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
 	}
 
 	protected double calcDiscount() {
-		if (qualitity * price > 1000) {
+		if (quantity * price > 1000) {
 			return 0.8;
 		}
 		return 1;
