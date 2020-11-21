@@ -1,19 +1,22 @@
-package by.academy.lesson6;
+package by.academy.homework4;
 
-public class Product {
-	double price;
-	String type;
-	String name;
-	int quantity;
+public abstract class Product {
+	
+	private static final long serialVersionUID = 1L;
+	
+	protected double price;
+	protected String type;
+	protected String producerName;
+	protected int quantity;
 
 	public Product() {
 		super();
 	}
 
-	public Product(double price, String type, String name, int quantity) {
+	public Product(double price, String type, String producerName, int quantity) {
 		super();
 		this.price = price;
-		this.name = name;
+		this.producerName = producerName;
 		this.type = type;
 		this.quantity = quantity;
 	}
@@ -26,12 +29,12 @@ public class Product {
 		this.price = price;
 	}
 
-	public String getName() {
-		return name;
+	public String getProducerName() {
+		return producerName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setProducerName(String name) {
+		this.producerName = name;
 	}
 
 	public String getType() {
@@ -50,11 +53,63 @@ public class Product {
 		this.quantity = quantity;
 	}
 
-	protected double calcDiscount() {
-		if (quantity * price > 1000) {
-			return 0.8;
-		}
-		return 1;
+	public double calcTotalPrice() {
+		return quantity * price * discount();
+	}
 
+	public abstract double discount();
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(price);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + ((producerName == null) ? 0 : producerName.hashCode());
+		result = prime * result + quantity;
+		result = prime * result + ((type == null) ? 0 : type.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Product other = (Product) obj;
+		if (Double.doubleToLongBits(price) != Double.doubleToLongBits(other.price))
+			return false;
+		if (producerName == null) {
+			if (other.producerName != null)
+				return false;
+		} else if (!producerName.equals(other.producerName))
+			return false;
+		if (quantity != other.quantity)
+			return false;
+		if (type == null) {
+			if (other.type != null)
+				return false;
+		} else if (!type.equals(other.type))
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Product [price=");
+		builder.append(price);
+		builder.append(", type=");
+		builder.append(type);
+		builder.append(", producerName=");
+		builder.append(producerName);
+		builder.append(", quantity=");
+		builder.append(quantity);
+		builder.append("]");
+		return builder.toString();
 	}
 }

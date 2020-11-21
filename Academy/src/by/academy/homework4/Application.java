@@ -1,21 +1,35 @@
-package by.academy.lesson6;
+package by.academy.homework4;
 
 public class Application {
 
 	public static void main(String[] args) {
-		Person seller = new Person("Вася", 3000.00);
-		Person byer = new Person("Петя", 3000.00);
+		Person seller = new Person("Vasya", 200.00);
+		Person buyer = new Person("Petya", 300.00);
 
-		Product[] products = new Product[5];
-		products[0] = new Product(10.00, "fruits", "apple", 50);
-		products[1] = new Product(7.00, "fruits", "peach", 70);
-		products[2] = new Product(3.00, "fruits", "banana", 45);
-		products[3] = new Milk(15.00, "milk", "milk", 5, "black");
-		products[4] = new Meat(20.00, "meat", "pig", 10, "свинина");
+		Product[] products = new Product[4];
 
-		Deal firstDeal = new Deal("1 January", byer, seller, products);
+		products[0] = new Meat(15.00, "meat", "Academy Bel", 7);
+		products[1] = new Vine(7.00, "vine", "peach", 7);
+		products[2] = new Milk(3.00, "milk", "banana", 15, "black");
+		products[3] = new Milk(3.00, "milk", "banana", 15, "black");
+
+		for (Product p : products) {
+			System.out.println("Name: " + p.getProducerName());
+			System.out.println("Type: " + p.getType());
+			System.out.println("Total Price: " + p.calcTotalPrice());
+			System.out.println("-----------------");
+		}
+		Person.americanPhoneValidator.isValid("+123123123");
+		Person.emailValidator.isValid("simpleperson@java.com");
+
+		System.out.println(((Milk) products[2]).getNonStaticMilkCount());
+		System.out.println(Milk.getMilkCount());
+
+		Product pTest = new Milk(3.00, "fruits", "banana", 15, "black");
+		Milk mtest = new Milk(10.00, "fruits", "apple", 5, "white");
+		Deal firstDeal = new Deal("1 January", buyer, seller, products);
 		firstDeal.result();
-		
+
 	}
 
 }

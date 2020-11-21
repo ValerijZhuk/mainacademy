@@ -1,4 +1,4 @@
-package by.academy.lesson6;
+package by.academy.homework4;
 
 public class Deal {
 	String date;
@@ -69,10 +69,10 @@ public class Deal {
 		System.out.println("Сделка совершена ");
 		System.out.println(date);
 		for (Product product : products) {
-			double totalProductPrice = product.getPrice() * product.getQuantity() * product.calcDiscount();
+			double totalProductPrice = product.getPrice() * product.getQuantity();
 			sum += totalProductPrice;
-			System.out.println("Имя: " + product.getName() + " " + "цена " + product.getPrice() + " количество "
-					+ product.getQuantity() + " = " + totalProductPrice);
+			System.out.println("Имя: " + product.getProducerName() + " " + product.getPrice() + "X"
+					+ product.getQuantity() + "=" + totalProductPrice);
 			
 		}
 		

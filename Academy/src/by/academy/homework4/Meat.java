@@ -1,16 +1,14 @@
-package by.academy.lesson6;
+package by.academy.homework4;
 
 public class Meat extends Product {
-	String breed;
-
-	public Meat(double price, String type, String name, int quantity, String breed) {
-		super(price, type, name, quantity);
-		this.breed = breed;
+	public Meat(double price, String type, String producerName, int quantity) {
+		super(price, type, producerName, quantity);
 	}
 
-	protected double calcDiscount() {
-		if (quantity > 10) {
-			return 0.85;
+	@Override
+	public double discount() {
+		if (producerName.contains("Bel")) {
+			return 0.8;
 		}
 		return 1;
 	}
