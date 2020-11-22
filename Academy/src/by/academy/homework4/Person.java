@@ -2,6 +2,7 @@ package by.academy.homework4;
 
 public class Person {
 	public static final Validator americanPhoneValidator = new AmericanPhoneValidator();
+	public static final Validator belarusianPhoneValidator = new BelarusianPhoneValidator();
 	public static final Validator emailValidator = new EmailValidator();
 //	public static Object emailValidator;
 	String name;
