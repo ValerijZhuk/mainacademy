@@ -37,6 +37,10 @@ public class Main {
 			try (FileWriter fw = new FileWriter(file)) {
 				fw.write(users.get(i).getName() + " " + users.get(i).getSurname() + " " + users.get(i).getAge());
 			}
+			catch(Exception e){
+	             
+	            System.out.println(e.getMessage());
+	        } 
 
 		}
 	}
