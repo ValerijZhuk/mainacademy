@@ -32,7 +32,7 @@ public class Main {
 		String words = str.toString();
 		System.out.println(words.length());
 		
-		for (int i = 0; i <= 100; i++) {
+		for (int i = 0; i < 100; i++) {
 			File file = new File(dir, (i + 1) + ".txt");
 			if (!file.exists()) {
 				file.createNewFile();
