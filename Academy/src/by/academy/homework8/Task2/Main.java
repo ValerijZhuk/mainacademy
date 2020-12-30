@@ -74,7 +74,7 @@ public class Main {
 		try {
 			Field setValueField = clzUser.getDeclaredField("password");
 			setValueField.setAccessible(true);
-			setValueField.set(user, "Vanya123");
+			setValueField.set(user, "qwerty123");
 			String passwordValue = (String) setValueField.get(user);
 			System.out.println("User changed password is: " + passwordValue);
 		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
@@ -84,7 +84,7 @@ public class Main {
 		try {
 			Field setValueField = clzUser.getDeclaredField("login");
 			setValueField.setAccessible(true);
-			setValueField.set(user, "Vanya");
+			setValueField.set(user, "ValeraZ");
 			String loginValue = (String) setValueField.get(user);
 			System.out.println("User changed login is: " + loginValue);
 		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
@@ -94,7 +94,7 @@ public class Main {
 		try {
 			Field setValueField = clzUser.getDeclaredField("email");
 			setValueField.setAccessible(true);
-			setValueField.set(user, "Vanya@mail.ru");
+			setValueField.set(user, "vz123@gmail.com");
 			String emailValue = (String) setValueField.get(user);
 			System.out.println("User changed email is: " + emailValue);
 		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
